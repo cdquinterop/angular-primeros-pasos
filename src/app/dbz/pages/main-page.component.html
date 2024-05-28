@@ -1,0 +1,17 @@
+<h1>Hola Mundo, Jeje</h1>
+
+<hr>
+
+<div class="row">
+  <div class="col">
+    <dbz-list [characterLIst]=" character"
+              (onDelete)="onDeleteCharacter($event)"
+    ></dbz-list>  <!--AHora ya puedo recibir informacion del mundo exterior-->
+  </div>
+
+  <div class="col">
+    <dbz-add-character (onNewCharacter)="onNewCharacter($event)"></dbz-add-character>
+  </div>
+
+
+</div>
